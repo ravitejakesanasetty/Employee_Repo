@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:property-placeholder location="classpath:/com/pawana/utils/DBdetails.properties"/>
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${db.driver}"/>
+		<property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+	</bean>
+	<bean id="dao" class="com.pawana.dao.CustomerDAO">
+		<property name="ds" ref="ds"/>
+		
+	</bean>
+	<bean id="service" class="com.pawana.service.CustomerService">
+		<property name="dao" ref="dao"/>
+	</bean>
+	<bean id="controller" class="com.pawana.controller.CustomerController">
+		<property name="service" ref="service"/>
+	</bean>
+	
+</beans>
