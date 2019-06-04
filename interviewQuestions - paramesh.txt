@@ -1,0 +1,224 @@
+  HTML interview questions
+---------------------------
+
+1) Difference between block and inline-block elements
+2) What are the new features in HTML5
+3) What is your favourite feature in HTML5
+4) Explain about web workers
+5) What is Doctype in HTML
+6) How to open IE with specific version (Eg: Open internet explorer in edge or IE9)
+7) Syntax for <audio> & <video> tags
+8) What is Geolocation in HTML5
+9) Explain about svg and canvas elements
+
+
+css interview questions
+----------------------------------
+1) Explain css specificity?
+2) how to write css by targetting either class name & ID  (using . and # )
+3) Difference between .classA.classB  versus .classA .classB
+4) Explain this ".classA#id1"  ?
+5) Which have more priority? Inline styles or css styles
+6) Explain "!important" in css
+7) What is shorthand notation in css for margin or padding...   eg: margin 10px 20px ?
+8) Assume div element has width 100px and height 100px. Now if we add padding 10px, what will be final width and height?
+9) Why should we write css styles in separate .css files rather than writing in <style>/<style> tags
+10) How to centre block elements in css ?
+11) How many ways to integrate css into a web page ?
+12) Media queries in css?
+13) What is responsive design ?
+14) Different position attributes ?
+15) What are pseudo elements in css ?
+16) Explain css3 box model ?
+17) What is z-index ?
+18) What is opacity and what is the value range ?
+19) Syntax to give background image url in css ?
+20) Explain usage of Sass / less framework
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Javascript questions..
+---------------------------
+
+1) Explain about declaring variables using var and let keyword ?
+2) if we declare variable without var, will it give error ?
+3) Explain variable scope in javascript ?
+4) Explain function scope in javascript ?
+5) Difference between ( null / undefined )
+6) Javascript conditional operator ?
+7) which javascript version currently you are using ?
+8) How to determine whether given object is array or not ?
+9) WAP to reverse a string ?
+10) Difference between local storage and session storage ?
+11) What are the benifits of using 'use strict' mode in starting of javascript file
+12)  
+function foo1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}
+ will they both return same result ?  answer: no
+ 
+ 
+13) what is NaN
+14) Write a function  IsInteger(x)
+15) Settimeout vs setinterval ?
+
+16) 
+var arr1 = "john".split('');
+var arr2 = arr1.reverse();
+var arr3 = "jones".split('');
+arr2.push(arr3);
+console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+
+17) 
+console.log(1 +  "2" + "2");
+console.log(1 +  +"2" + "2");
+console.log(1 +  -"1" + "2");
+console.log(+"1" +  "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+
+18) closure in javascript?
+
+19) 
+console.log(false == '0')
+console.log(false === '0')
+
+
+20) What is the output?
+console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
+
+21)self invoking functions
+
+22) Different ways of invoking functions?
+23) Explain this keyword in javascript
+24) What is JSON object?
+25) How many ways to create a object ?
+26) Object literal in javascript?
+27) Prototype methods in javascript?
+28) classes in javascript?
+29) Overiding prototype methods in javascript ?
+30) How to clone an object ?
+31) How to add html element dynamically using javascript ?
+32) console.log(typeof typeof 1);
+33) write anagrams function in javascript?
+34) Fibonacci series recursive program in javascript?
+35) Difference between undefined and not defined in JavaScript ?
+36) Public vs private variables
+37) console.log(mul(2)(3)(4)); ?  write a program and explain?
+38) Different ways to empty an array in JavaScript?
+39)
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+
+40) 
+var trees = ["xyz", "xxxx", "test", "ryan", "apple"];
+delete trees[3];
+console.log(trees.length);
+
+
+41)How to achive inheritance in javascript?
+42) What is the instanceof operator in JavaScript?
+43) Difference between Function, Method and Constructor calls in JavaScript.
+44) Describe Singleton Pattern In JavaScript?
+45) 
+addNumbers(10,20);
+var addNumbers = function(x,y) {
+	console.log(x+y);
+}
+
+what is the output ?
+
+
+46)
+addNumbers(10,20);
+function addNumbers(x,y) {
+	console.log(x+y);
+}
+
+what is the output ?
+
+
+47)Write a function called deepClone which takes an object and creates a object copy of it.
+
+48) What is object oriented javascript? Explain OOPS feature ?
+49) How we can prevent modification of object in JavaScript ?
+answer: var employee = {
+	name: "Nishant"
+};
+
+// lock the object 
+Object.preventExtensions(employee);
+
+
+
+
+50) What is typical use case for anonymous function in JavaScript ?
+51) Write code for merge two JavaScript Object dynamically.
+52) What is Function binding ?   (Hint: binding click event or keypress event ... )
+53) Hositing in JavaScript?
+54) overiding prototype methods
+55) callbacks in javascript
+56) promises in javascript
+57) Difference between callback and promise
+58) what is shallow copying?
+
+
+
+
+JQuery questions
+----------------
+1) JQuery selectors
+2) jquery event bindings
+3) How to trigger an jquery event?
+4) event bubbling? and how to prevent it?
+5) core features of JQuery ?
+6) How to resolve confict with another JavaScript library if $ is already being in use?
+7) How to select all elements using jQuery?
+8) How can you apply a style on an element using jQuery?
+9) Jquery get parent element, child element, sibilings 
+10) Which jquery version you are using now?
+11) How to get/set the height of an element using jQuery?
+12) How to make a ajax call using jQuery?
+
+
+some angular js questions
+--------------------------------
+
+1) what is two way binding ?
+2) How to achieve single way binding in angular js ?
+3) how to share data between controllers ?
+4) What are directives in angular js? Write syntax ?
+5) services vs factory? which is best?
+6) $http usage in angular js?
+7) interceptors in angular js?
+8) cutsom filter sample code?
+9) form validations in angular js?
+10) What is angular.copy() method?
+11) ng-init vs ng-bind
+12) what is ng-bind-html ?
+13) What is the difference between link and compile in Angular.js?
+14) what is isolated scope ?
+15) Dependency injection in angular js?
+16) Angular $apply() & $digest() ?
+17) What is the difference between ng-show/ng-hide and ng-if directives?
+18) What is a digest cycle in AngularJS?
+19) Explain how $scope.$apply() works
+20) How would you make an Angular service return a promise? Write a code snippet as an example
+21) Angular directive pre and post compile ?
